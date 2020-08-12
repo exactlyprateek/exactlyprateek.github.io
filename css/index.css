@@ -1,0 +1,783 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+
+.important-link {
+  text-decoration: underline;
+  color: #007fd3;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+span.html-mock {
+  color: #009cf7;
+}
+
+.angle {
+  color: #888888;
+}
+
+div.tooltip {
+  color: #c9c9c9;
+  z-index: 300;
+  left: 45px;
+  width: 150px;
+  padding: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #3d3d3d;
+  -webkit-box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+div.divider {
+  margin-top: 15px;
+  color: #009b00bd;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+body {
+  background-image: url("/images/desktop-b4.jpeg");
+  background-position: center;
+  background-size: cover;
+  font-family: "Source Code Pro", monospace;
+  margin: 0 auto;
+}
+
+body div.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+body div.wrapper div.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("/images/desktop-b4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body div.wrapper div.landing div.menu-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.801);
+  height: 3vh;
+}
+
+body div.wrapper div.landing div.menu-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body div.wrapper div.landing div.menu-bar ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+body div.wrapper div.landing div.menu-bar ul li:not(:first-child) {
+  margin-left: 15px;
+}
+
+body div.wrapper div.landing div.menu-bar ul li.important {
+  font-weight: bolder;
+}
+
+body div.wrapper div.landing div.vscode-icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+body div.wrapper div.landing div.vscode-icon p.caption {
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.58);
+}
+
+body div.wrapper div.landing div.vscode-icon:hover {
+  width: 125px;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+
+body div.wrapper div.editor-simulation {
+  display: none;
+  border-radius: 5px;
+  height: 100vh;
+  width: 100%;
+  background-color: #272727;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div.wrapper div.editor-simulation header {
+  height: 2.5vh;
+  padding: 0 10px;
+  background-color: #424242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .button:not(:first-child) {
+  margin-left: 10px;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .red {
+  background-color: #ff5b5b;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .yellow {
+  background-color: #ffea2e;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .green {
+  background-color: #00ff00;
+}
+
+body div.wrapper div.editor-simulation header div.logo {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 97.5vh;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer {
+  background-color: #3d3d3d;
+  width: 5%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom-left-radius: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li {
+  text-align: center;
+  padding: 10px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li:not(:first-child) {
+  margin-top: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li i {
+  color: #7e7e7e;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li i:hover {
+  color: #fff;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li.user {
+  border-left: 2px solid #fff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li.user i {
+  color: #fff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li.contact-me {
+  display: none;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li {
+  display: none;
+  text-align: center;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li i {
+  color: #7e7e7e;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li i:hover {
+  color: #fff;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit {
+  position: relative;
+  width: 95%;
+  height: 100%;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3.5vh;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li {
+  border-right: 1px solid #333;
+  border-bottom: 0;
+  background-color: #505050;
+  text-align: center;
+  padding: 7px;
+  color: #b8b8b8;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li i {
+  margin-right: 7px;
+  font-size: 0.8rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li span.close {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-left: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #9b9b9b;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.readme {
+  background-color: #272727;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.readme i {
+  color: #00b7ff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.git-projects i {
+  color: #00b7ff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.contact {
+  display: none;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.contact i {
+  color: #00b7ff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.path {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  color: #9b9b9b;
+  font-size: 0.5rem;
+  padding: 2px 0 2px 8px;
+  -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.projects-path {
+  display: none;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.contact-path {
+  display: none;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head .path-icon {
+  color: #00b7ff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content {
+  width: 100%;
+  height: 88vh;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers {
+  margin-top: 3px;
+  height: 100%;
+  width: 5%;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #ffffff2d;
+  height: 100%;
+  padding-top: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul li {
+  padding: 2px 20px;
+  text-align: right;
+  border-right: none;
+  background-color: #272727;
+  color: #7e7e7e;
+  font-size: 0.7rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max {
+  padding: 20px 20px 0 20px;
+  width: 35%;
+  font-size: 1rem;
+  height: 100%;
+  border-right: 1px solid #333;
+  overflow-y: scroll;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max img {
+  border-radius: 5px;
+  width: 75%;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.name-wrapper {
+  margin-bottom: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.name-wrapper h3.name {
+  display: inline;
+  margin: 7px 0;
+  color: #fff;
+  text-align: left;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max p.about {
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 1.4;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.fs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.fs div.fs-logo {
+  width: 30px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.fs div.fs-title {
+  color: #fff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement {
+  color: #9b9b9b;
+  margin-top: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.ed-icon {
+  margin-right: 10px;
+  text-align: center;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.ed-icon i {
+  font-size: 1.2rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.award {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.doc div.award-date {
+  margin-left: 7px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education {
+  width: 45%;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education h3.tech-skills-title {
+  color: #fff;
+  margin: 8px 0;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment {
+  margin-top: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul {
+  border: 1px solid #9b9b9b;
+  border-radius: 10px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li.sub-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li.sub-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li.sub-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li.sub-title {
+  border-bottom: 1px solid #9b9b9b;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li.sub-title i,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li.sub-title i,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li.sub-title i,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li.sub-title i {
+  margin-right: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  color: #9b9b9b;
+  padding: 8px 0 8px 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-logo,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-logo,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-logo,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li div.lang-logo {
+  width: 30px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-logo img,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-logo img,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-logo img,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li div.lang-logo img {
+  width: 100%;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li div.lang-title {
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.arrow {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 300;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.arrow i {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.651);
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects {
+  display: none;
+  width: 100%;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 25px 60px 25px;
+  color: #eeeeee;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head div.app-logo {
+  margin-right: 15px;
+  width: 250px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head div.project-about div.head-content ul.misc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px 0;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head div.project-about div.head-content ul.misc li:not(:last-child) {
+  margin-right: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head div.project-about div.head-content ul.misc li.downloads {
+  font-size: 0.8rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head div.project-about div.head-content ul.misc li.rating {
+  font-size: 0.7rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head div.project-about div.head-content p.one-liner {
+  font-size: 0.9rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head span {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body {
+  padding: 30px 50px;
+  width: 90%;
+  margin: 0 auto;
+  color: #eeeeee;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body p.summary {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body ul {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body ul li {
+  font-size: 0.8rem;
+  list-style-type: square;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body div.demo {
+  width: 90%;
+  margin: 30px auto 0 auto;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body div.alt-links {
+  margin: 35px auto;
+  width: 90%;
+  font-size: 0.9rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body div.alt-links a {
+  display: inline-block;
+  color: #007fd3;
+  text-decoration: underline;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min {
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+  width: 8%;
+  height: 85vh;
+  overflow-y: scroll;
+  cursor: pointer;
+  padding: 5px;
+  -webkit-box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min:hover {
+  background-color: #5e5e5e7a;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer {
+  width: 100%;
+  height: 2.7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.copyright {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.7rem;
+  height: 100%;
+  padding: 3px 0 0 10px;
+  width: 25%;
+  background-color: #00c000;
+  letter-spacing: 1px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.copyright span {
+  display: inline-block;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.hire-me {
+  color: #fff;
+  font-size: 0.7rem;
+  width: 75%;
+  height: 100%;
+  padding: 3px 10px 0 0;
+  text-align: right;
+  background-color: #208ae0;
+  letter-spacing: 1px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.hire-me div.hire {
+  margin-right: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.hire-me a {
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */
