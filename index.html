@@ -3,534 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prateek Rohilla</title>
-    <link rel="stylesheet" href="/css/media_queries/mq_768.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <script src="https://kit.fontawesome.com/125c865154.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Zira Tickets</title>
 </head>
 
 <body>
-    <!-- <div class="menu-bar">
-
-    </div> -->
-    <div class="wrapper">
-        <div class="landing">
-            <div class="menu-bar">
-                <ul>
-                    <li><i class="fab fa-apple"></i></li>
-                    <li class="important">Finder</li>
-                    <li>File</li>
-                    <li>Edit</li>
-                    <li>View</li>
-                    <li>Go</li>
-                    <li>Window</li>
-                    <li>Help</li>
-                </ul>
+    <div class="container">
+        <div class="navbar">
+            <div class="filter-container">
+                <div class="filter">
+                    <span class="pink-color-btn"></span>
+                </div>
+                <div class="filter">
+                    <span class="blue-color-btn"></span>
+                </div>
+                <div class="filter">
+                    <span class="yellow-color-btn"></span>
+                </div>
+                <div class="filter">
+                    <span class="green-color-btn"></span>
+                </div>
             </div>
-            <div class="vscode-icon animate__animated animate__pulse animate__fast  animate__infinite">
-                <img src="/images/vscode-icon.png" alt="vscode icon">
-                <p class="caption">VSCode</p>
+            <div class="add-delete-container">
+                <div class="add">
+                    <span class="material-icons action-btn">add</span>
+                </div>
+                <div class="delete">
+                    <span class="material-icons action-btn">delete</span>
+                </div>
             </div>
         </div>
-        <div class="editor-simulation">
-            <header>
-                <div class="window-buttons">
-                    <div class="red button"></div>
-                    <div class="yellow button"></div>
-                    <div class="green button"></div>
+        <div class="ticket-container">
+            <!-- <div style="width: 50vw; height: 100vh; background-color: green;"></div> -->
+            <!-- <div class="modal">
+                <div class="task-to-be-added" contenteditable="true">
+                    <span class="placeholder">Enter your text here</span>
                 </div>
-                <div class="logo">
-                    Prateek Rohilla
+                <div class="priority-list">
+                    <div class="pink-modal-filter modal-filter active"></div>
+                    <div class="blue-modal-filter modal-filter"></div>
+                    <div class="green-modal-filter modal-filter"></div>
+                    <div class="yellow-modal-filter modal-filter"></div>
                 </div>
-            </header>
-            <div class="explorer-and-edit">
-                <div class="explorer explorer-768">
-                    <ul class="nav">
-                        <li class="user icon" title='READ-ME'>
-                            <i class="fas fa-user-astronaut"></i>
-                        </li>
-                        <li class="git icon" title="Github Projects">
-                            <i class="fas fa-code-branch"></i>
-                        </li>
-                        <li class="contact-me icon" title="Contact Me">
-                            <i class="fas fa-at"></i>
-                        </li>
-                    </ul>
-                    <div class="social">
-                        <ul class="social-nav">
-                            <li class="s-icon icon github" title="Github">
-                                <a href="https://github.com/exactlyprateek" target="_blank">
-                                    <i class="fab fa-github"></i></li>
-                            </a>
-                            <li class="s-icon icon linkedin" title="LinkedIn">
-                                <a href="https://www.linkedin.com/in/prateek-rohilla/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <!-- <li class="s-icon icon dev" title="DEV.to">
-                                <a href="https://dev.to/" target="_blank">
-                                    <i class="fab fa-dev"></i>
-                                </a>
-                            </li> -->
-                            <li class="s-icon icon twitter" title="Twitter">
-                                <a href="https://twitter.com/exactlyprateek" target="_blank">
-                                    <i class="fab fa-twitter-square"></i>
-                                </a>
-                            </li>
-                            <li class="s-icon icon behance" title="Tumblr">
-                                <a href="https://www.behance.net/prateekrohilla/" target="_blank">
-                                    <i class="fab fa-behance"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            </div> -->
+
+            <!-- <div class="ticket active">
+                <div class="ticket-color ticket-color-yellow"></div>
+                <div class="ticket-id">#abdhjf</div>
+                <div class="task">
+                    fjbdjfb fdjbfjd fjdbf dfbdf dfhd f
                 </div>
-                <div class="edit">
-                    <div class="edit-head">
-                        <ul>
-                            <li class="tab readme"><i class="fas fa-info-circle"></i>READ.me</li>
-                            <!-- <li class="tab git-projects"><i class="fas fa-project-diagram"></i>PROJECTS.mine</li> -->
-                            <li class="tab contact"><i class="fas fa-at"></i>CONTACT.me</li>
-                        </ul>
-                        <div class="readme-path path">
-                            <i class="fas fa-user-astronaut astro path-icon"></i> Prateek Rohilla &gt; <i class="fas fa-info-circle path-icon"></i> READ.me
-                        </div>
-                        <div class="projects-path path">
-                            <i class="fas fa-user-astronaut path-icon"></i> Prateek Rohilla &gt; <i class="fas fa-project-diagram path-icon"></i> PROJECTS.mine
-                        </div>
-                        <div class="contact-path path">
-                            <i class="fas fa-user-astronaut path-icon"></i> Prateek Rohilla &gt; <i class="fas fa-at  path-icon"></i> CONTACT.me
-                        </div>
-                    </div>
-                    <div class="inner-content">
-                        <div class="line-numbers">
-                            <ul class="number-list">
-
-                            </ul>
-                        </div>
-                        <div class="naya-image-cont-max">
-                            <div class="name-wrapper">
-                                <span class="html-mock">
-                                <span><span class="angle">&lt;</span>h3<span class="angle">&gt;</span> </span>
-                                <h3 class="name">Prateek Rohilla</h3>
-                                <span><span class="angle">&lt;/</span>h3<span class="angle">&gt;</span> </span>
-                                </span>
-                            </div>
-                            <div class="about-wrapper">
-                                <span class="html-mock">
-                                    <span><span class="angle">&lt;</span>p<span class="angle">&gt;</span> </span>
-                                <p class="about">
-                                    Hello, my name is Prateek Rohilla. I'm a computer science undergrad at <strong>Maharaja Surajmal Institute of
-                                        Technology</strong> learning and facing challenges in the tech world with some awesome
-                                    people. As a software engineer, I enjoy bridging the gap between
-                                    engineering and design — combining my technical knowledge with my keen eye for design to create
-                                    a beautiful product.<strong> When I'm not in front of a computer screen</strong>, I'm probably
-                                    stargazing 🔭 , blowing stumps on the cricket
-                                    field 🏏, or crossing off another item on my bucket list
-                                </p>
-                                <span><span class="angle">&lt;/</span>p<span class="angle">&gt;</span> </span>
-                                </span>
-                            </div>
-                            <div class="divider">
-                                &lt;!-- Resume --&gt;
-                            </div>
-                            <div class="education">
-                                <div class="fs">
-                                    <div class="fs-logo">
-                                        <i class="fa fa-pagelines" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <a href="./assets/PrateekRohilla_Frontend_2022.pdf">Click to see my Resume</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="divider">
-                                &lt;!-- Education --&gt;
-                            </div>
-
-
-
-                            <div class="education">
-                                <div class="fs">
-                                    <div class="fs-logo">
-                                        <img src="http://www.msit.in/static/img/msit.png" alt="MSIT logo">
-                                    </div>
-                                    <div class="fs-title">
-                                        Maharaja Surajmal Institute of Technology
-                                    </div>
-                                </div>
-                                <div class="achievement">
-                                    <div class="award">
-                                        <div class="ed-icon">
-                                            <i class="fas fa-graduation-cap"></i>
-                                        </div>
-                                        <div class="award-title award-info">
-                                            B.Tech (Computer Science Engineering)
-                                        </div>
-                                    </div>
-                                    <div class="doc">
-                                        <div class="ed-icon">
-                                            <i class="far fa-calendar-alt"></i>
-                                        </div>
-                                        <div class="award-date award-info">
-                                            August, 2018 - July, 2022
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="line-numbers">
-                            <ul class="number-list">
-                            </ul>
-                        </div>
-
-                        <!-- Skill and other content goes here  -->
-                        <div class="skills-education">
-
-                            <div class="tech-skills">
-                                <span class="html-mock">
-                                    <span><span class="angle">&lt;</span>h3<span class="angle">&gt;</span> </span>
-                                <h3 class="tech-skills-title"><i class="fas fa-laptop-code"></i> Tech Skills</h3>
-                                <span><span class="angle">&lt;/</span>h3<span class="angle">&gt;</span> </span>
-                                </span>
-                                <div class="languages">
-                                    <ul>
-                                        <li class="sub-title"><i class="fas fa-terminal title-icon"></i>Programming Languages</li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/cpp.png" alt="ruby language logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                C++
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/js-logo.png" alt="ruby language logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Javascript
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/python-logo.png" alt="ruby language logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Python
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="divider">
-                                    &lt;!-- Keep Scrolling --&gt;
-                                </div>
-                                <div class="library-frameworks">
-                                    <ul>
-                                        <li class="sub-title"><i class="fas fa-sitemap title-icon"></i>Libraries/ Frameworks</li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/django.png" alt="sinatra logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Django
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/bs.png" alt="rails logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Bootstrap
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/react-logo.png" alt="react logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                React
-                                            </div>
-                                        </li>
-                                        <!-- <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/redux-logo.png" alt="redux logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Redux
-                                            </div>
-                                        </li> -->
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/node-logo.svg" alt="node-js logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Node
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="divider">
-                                    &lt;!-- Keep Scrolling --&gt;
-                                </div>
-                                <div class="databases">
-                                    <ul>
-                                        <li class="sub-title"><i class="fas fa-database"></i> Databases</li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/sql-logo.png" alt="mysql logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                SQL
-                                            </div>
-                                        </li>
-                                        <!-- <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/postgresql-logo.png" alt="postgresql logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Postgresql
-                                            </div>
-                                        </li> -->
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/mongodb-logo.png" alt="ruby language logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                MongoDB
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="divider">
-                                    &lt;!-- Keep Scrolling --&gt;
-                                </div>
-                                <div class="deployment">
-                                    <ul>
-                                        <li class="sub-title"><i class="fas fa-cloud-upload-alt"></i> Deployment</li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/heroku-logo.png" alt="heroku logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Heroku
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/github-pages-logo.png" alt="github pages logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                GithHub Pages
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="lang-logo">
-                                                <img src="/images/netlify-logo.png" alt="netlify logo">
-                                            </div>
-                                            <div class="lang-title">
-                                                Netlify
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="arrow">
-                                <i class="fas fa-arrow-down"></i>
-                            </div>
-                        </div>
-                        <!-- Project section  -->
-                        <div class="my-projects">
-                            <!-- gomojii  -->
-                            <div class="project">
-                                <div class="project-head">
-                                    <div class="app-logo">
-                                        <img src="/images/gomojii-logo.png" alt="Gomojii App logo">
-                                    </div>
-                                    <div class="project-about">
-                                        <div class="head-content">
-                                            <h2>Gomojii<span> Project #1</span></h2>
-                                            <ul class="misc">
-                                                <li>Prateek Rohilla |</li>
-                                                <li class="downloads"><i class="fas fa-cloud-download-alt"></i> Billion |</li>
-                                                <li class="rating">⭐⭐⭐⭐⭐ |</li>
-                                                <li><a href="https://github.com/greedybrain/Gomojii" class="important-link" target="_blank">Gomojii Repo</a></li>
-                                            </ul>
-                                            <p class="one-liner">Heavily emoji themed application. Search through emojis and more</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-body">
-                                    <h1>Ecommerce</h1>
-                                    <p class="summary">Ecommerce Website is a Django Web application that allows a user to login Signup and manage items in a ecommerce store.</p>
-                                    <ul class="features">
-                                        <!-- <li>User can search through all emojis</li>
-                                        <li>User can filter through all emojis</li>
-                                        <li>User can save/bookmark emojis</li>
-                                        <li>User will have access to many other emoji themed widgets</li> -->
-                                    </ul>
-                                    <div class="demo">
-                                        <video width="100%" controls>
-                                            <source src="/videos/gomojii-demo.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
-                                    <div class="alt-links">
-                                        <a href="https://github.com/greedybrain" target="_blank">GitHub Profile</a> |
-                                        <a href="https://github.com/greedybrain/Gomojii" target="_blank">Gomojii Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- layman docs  -->
-                            <div class="project">
-                                <div class="project-head">
-                                    <div class="app-logo">
-                                        <img src="/images/layman-docs-logo.png" alt="LaymanDocs App logo">
-                                    </div>
-                                    <div class="project-about">
-                                        <div class="head-content">
-                                            <h2>Layman Docs<span> Project #2</span></h2>
-                                            <ul class="misc">
-                                                <li>Prateek Rohilla |</li>
-                                                <li class="downloads"><i class="fas fa-cloud-download-alt"></i> Billion |</li>
-                                                <li class="rating">⭐⭐⭐⭐⭐ |</li>
-                                                <li><a href="https://github.com/greedybrain/layman-docs-project" class="important-link" target="_blank">Layman Docs Repo</a></li>
-                                            </ul>
-                                            <p class="one-liner">Helps to make documentation more understandable by users contributing explanations</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-body">
-                                    <h1>Layman Docs</h1>
-                                    <p class="summary">This application is an attempt to make reading or parsing through different types of languages and/or frameworks documentation easier.</p>
-                                    <ul class="features">
-                                        <li>User can submit a post</li>
-                                        <li>User can upvote/downvote a post</li>
-                                        <li>User can upvote/downvote an elaboration</li>
-                                        <li>User can create elaborations on another users post</li>
-                                    </ul>
-                                    <div class="demo">
-                                        <video width="100%" controls>
-                                            <source src="/videos/layman-docs-demo.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
-                                    <div class="alt-links">
-                                        <a href="https://github.com/greedybrain" target="_blank">GitHub Profile</a> |
-                                        <a href="https://github.com/greedybrain/layman-docs-project" target="_blank">Layman Docs Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- it memes alot  -->
-                            <div class="project">
-                                <div class="project-head">
-                                    <div class="app-logo">
-                                        <img src="/images/it-memes-a-lot-logo.png" alt="It Memes A Lot App logo">
-                                    </div>
-                                    <div class="project-about">
-                                        <div class="head-content">
-                                            <h2>It Memes A Lot<span> Project #3</span></h2>
-                                            <ul class="misc">
-                                                <li>Prateek Rohilla |</li>
-                                                <li class="downloads"><i class="fas fa-cloud-download-alt"></i> Billion |</li>
-                                                <li class="rating">⭐⭐⭐⭐⭐ |</li>
-                                                <li><a href="https://github.com/exactlyprateek/" class="important-link" target="_blank">It Memes A Lot Repo</a></li>
-                                            </ul>
-                                            <p class="one-liner">Search and post memes of all kinds</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-body">
-                                    <h1>It Memes Alot</h1>
-                                    <p class="summary">This application is a fun and playful application where a user can post memes, comment on memes, and like memes.</p>
-                                    <ul class="features">
-                                        <li>User can submit a meme</li>
-                                        <li>User can like/dislike a meme</li>
-                                        <li>User can comment on a meme</li>
-                                    </ul>
-                                    <div class="demo">
-                                        <video width="100%" controls>
-                                            <source src="/videos/it-memes-alot-demo.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
-                                    <div class="alt-links">
-                                        <a href="https://github.com/greedybrain" target="_blank">GitHub Profile</a> |
-                                        <a href="https://github.com/greedybrain/ItMemesAlotProject" target="_blank">It Memes A Lot Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- gummy-notes  -->
-                            <div class="project">
-                                <div class="project-head">
-                                    <div class="app-logo">
-                                        <img src="/images/gummy-notes-logo.png" alt="Gummy Notes App logo">
-                                    </div>
-                                    <div class="project-about">
-                                        <div class="head-content">
-                                            <h2>Gummy Notes<span> Project #4</span></h2>
-                                            <ul class="misc">
-                                                <li>Prateek Rohilla |</li>
-                                                <li class="downloads"><i class="fas fa-cloud-download-alt"></i> Billion |</li>
-                                                <li class="rating">⭐⭐⭐⭐⭐ |</li>
-                                                <li><a href="https://github.com/exactlyprateek" class="important-link" target="_blank">Gummy Notes Repo</a></li>
-                                            </ul>
-                                            <p class="one-liner">Create reminders and todos using digital colored coded sticky notes</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-body">
-                                    <h1>Gummy Notes</h1>
-                                    <p class="summary">Gummy Notes is a web application built for people to easily create Digital Sticky notes to remember certain things and to keep track of certain tasks that they may have to get done.</p>
-                                    <ul class="features">
-                                        <li>User can create a digital sticky note</li>
-                                        <li>User can delete a digital sticky note</li>
-                                    </ul>
-                                    <div class="demo">
-                                        <video width="100%" controls>
-                                            <source src="/videos/gummy-notes-demo.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
-                                    <div class="alt-links">
-                                        <a href="https://github.com/greedybrain" target="_blank">GitHub Profile</a> |
-                                        <a href="https://github.com/greedybrain/GummyNotes" target="_blank">Gummy Notes Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="naya-image-cont-min">
-                            <img src="/images/blurb-2.png" alt="screenshot of editor state">
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="copyright"></span>
-                        </div>
-                            <span class="copy">&copy;</span> <span class="title-in-footer">exactlyprateek
-                        <div class="hire-me">
-                            <div class="hire animate__animated animate__flash animate__slow animate__infinite">
-                                Hire Me > <a href="mailto:prateekrohilla4.pr@gmail.com">prateekrohilla4.pr@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </div>
-    <script src="/js/index.js"></script>
-    <script src="/js/media_queries.js"></script>
-    <img src="http://canarytokens.com/angx8wh1757k6lo6bfakrb9nm/img.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script>
+        let uid = new ShortUniqueId();
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-<!-- <h3 class="phone">
-                                <i class="fas fa-phone-square"></i>
-                                <a href="tel:8506061729">+91-8506061729</a>
-                            </h3>
-                            <h3 class="email">
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:prateekrohilla4.pr@gmail.com">prateekrohilla4.pr@gmail.com</a>
-                            </h3> -->
