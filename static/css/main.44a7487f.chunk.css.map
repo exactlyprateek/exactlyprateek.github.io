@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,+BACY,CACZ,kCAAmC,CACnC,iCACF","file":"main.44a7487f.chunk.css","sourcesContent":["body {\n  margin: 0;\n  font-family: \"SF Pro\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n"]}
