@@ -25,6 +25,7 @@ function Main() {
 				<Stack flex={1} spacing={{ base: 5, md: 10 }}>
 					<Heading lineHeight={1.1} fontWeight={600} fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }}>
 						<Heading
+						 fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
 							as={'span'}
 							position={'relative'}
 							_after={{
@@ -42,7 +43,9 @@ function Main() {
 						</Heading>
 						<br />
 
-						<Heading as={'span'} color={'red.400'}>
+						<Heading 
+						 fontSize={{ base: 'xl', sm: '2xl', lg: '4xl' }}
+						 as={'span'} color={'red.400'}>
 							Frontend Web Developer
 						</Heading>
 					</Heading>

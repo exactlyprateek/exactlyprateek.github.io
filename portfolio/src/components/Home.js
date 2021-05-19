@@ -17,13 +17,32 @@ function Home() {
 			</Box>
 			<Box mt={[ '52vh', '42vh', '32vh', '22vh' ]}>
 				<Center>
-					<Heading as="h2" size="2xl">
+					<Heading pt="2rem" id="projects" as="h2" size="2xl">
 						My Projects
 					</Heading>
 				</Center>
 
-				<SimpleGrid id="projects" minChildWidth="400px" mt="4rem">
-					{[ img, img, img ].map((i, idx) => <Cardboard link={i} />)}
+				<SimpleGrid id="cards" backgroundImage="/wave.svg" backgroundRepeat="no-repeat" backgroundPosition={["0 83rem","0 82rem","0 78rem","0 9rem" ]} minChildWidth="400px" mt="4rem">
+					{[
+						{
+							title: 'Zira Tickets',
+							visit: 'https://exactlyprateek.github.io/zira/',
+							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
+							image: '/zira.png'
+						},
+						{
+							title: 'SkinX',
+							visit: 'http://3.128.170.254/',
+							code: null,
+							image: '/skinx.png'
+						},
+						{
+							title: 'Zira Tickets',
+							visit: 'https://exactlyprateek.github.io/zira/',
+							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
+							image: '/zira.png'
+						}
+					].map((i, idx) => <Cardboard key={idx} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
 				</SimpleGrid>
 			</Box>
 			<Footer />

@@ -3,7 +3,8 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const SocialButton = (props) => {
 	return (
-		<chakra.button
+		<Link href={props.link}  target="_blank" >
+			<chakra.button
 			bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
 			rounded={'full'}
 			w={8}
@@ -20,6 +21,8 @@ const SocialButton = (props) => {
 		>
 			{props.icon}
 		</chakra.button>
+		</Link>
+		
 	);
 };
 
@@ -36,15 +39,15 @@ export default function Footer() {
 				align={{ base: 'center', md: 'center' }}
 			>
 				<Text>
-					No copyrigt you can copy the code from{' '}
-					<Link color="blue.400" href="https://github.com/exactlyprateek/">
+					No copyright, you can copy it from{' '}
+					<Link color="blue.400" href="https://github.com/exactlyprateek/exactlyprateek.github.io.git/">
 						my github
 					</Link>
 				</Text>
 				<Stack direction={'row'} spacing={6}>
-					<SocialButton label={'Twitter'} href={'#'} icon={<FaTwitter w={6} h={6} />} />
-					<SocialButton label={'YouTube'} href={'#'} icon={<FaYoutube w={6} h={6} />} />
-					<SocialButton label={'Instagram'} href={'#'} icon={<FaInstagram w={6} h={6} />} />
+					<SocialButton label={'Twitter'} link='https://twitter.com/exactlyprateek'  target="_blank" icon={<FaTwitter w={6} h={6} />} />
+					<SocialButton label={'YouTube'} link='https://youtube.com/'  target="_blank" icon={<FaYoutube w={6} h={6} />} />
+					<SocialButton label={'Instagram'} link='https://instagram.com/prateekprateekprateek'  icon={<FaInstagram w={6} h={6} />} />
 				</Stack>
 			</Container>
 		</Box>
