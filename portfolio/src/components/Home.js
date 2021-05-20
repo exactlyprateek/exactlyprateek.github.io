@@ -6,9 +6,6 @@ import Nav from './Nav';
 // import { Link, animateScroll as scroll } from 'react-scroll';
 import Footer from './Footer';
 function Home() {
-	const img =
-		'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
-
 	return (
 		<div>
 			<Nav />
@@ -28,21 +25,24 @@ function Home() {
 							title: 'Zira Tickets',
 							visit: 'https://exactlyprateek.github.io/zira/',
 							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
-							image: '/zira.png'
+							image: '/zira.png',
+							dark: '/zira.png'
 						},
 						{
 							title: 'SkinX',
 							visit: 'http://3.128.170.254/',
 							code: null,
-							image: '/skinx.png'
+							image: '/skinx.png',
+							dark: '/skinx.png'
 						},
 						{
 							title: 'Zira Tickets',
-							visit: 'https://exactlyprateek.github.io/zira/',
-							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
-							image: '/zira.png'
+							visit: 'https://commonrooom.vercel.app/',
+							code: 'https://github.com/exactlyprateek/common-room-final',
+							image: '/commonroom.png',
+							dark: '/common2.png'
 						}
-					].map((i, idx) => <Cardboard key={idx} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
+					].map((i, idx) => <Cardboard key={idx} dark={i.dark} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
 				</SimpleGrid>
 			</Box>
 			<Footer />

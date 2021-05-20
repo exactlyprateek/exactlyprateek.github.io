@@ -18,7 +18,7 @@ function Cardboard(props) {
 						pos: 'absolute',
 						top: 5,
 						left: 0,
-						backgroundImage: `url(${props.image})`,
+						backgroundImage: useColorModeValue(`url(${props.image})`,`url(${props.dark})`),
 						filter: 'blur(15px)',
 						zIndex: -1
 					}}
@@ -58,7 +58,7 @@ function Cardboard(props) {
 						pos: 'absolute',
 						top: 5,
 						left: 0,
-						backgroundImage: `url(${props.image})`,
+						backgroundImage: useColorModeValue(`url(${props.image})`,`url(${props.dark})`),
 						filter: 'blur(15px)',
 						zIndex: -1
 					}}
@@ -69,7 +69,7 @@ function Cardboard(props) {
 					}}
 				>
 					<Link target="_blank" href={props.visit}>
-					<Image rounded={'lg'} height={230} width={282} objectFit={'cover'} src={props.image} />
+					<Image rounded={'lg'} height={230} width={282} objectFit={'cover'} src={useColorModeValue(props.image,props.dark)} />
 					</Link>
 				</Box>
 				<Stack pt={10} align={'center'}>
