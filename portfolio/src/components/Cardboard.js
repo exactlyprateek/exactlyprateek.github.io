@@ -73,9 +73,12 @@ function Cardboard(props) {
 					</Link>
 				</Box>
 				<Stack pt={10} align={'center'}>
-					<Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-						Brand
+					<Center>
+						<Text fontSize={'sm'} textTransform={'capitalise'}>
+					{props.desciption} 
 					</Text>
+					</Center>
+					
 					<Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
 						{props.title}
 					</Heading>

@@ -19,30 +19,49 @@ function Home() {
 					</Heading>
 				</Center>
 
-				<SimpleGrid id="cards" backgroundImage="/wave.svg" backgroundRepeat="no-repeat" backgroundPosition={["0 83rem","0 82rem","0 78rem","0 9rem" ]} minChildWidth="400px" mt="4rem">
+				<SimpleGrid id="cards" backgroundImage="/blobs.svg" backgroundRepeat="no-repeat"  minChildWidth="400px" mt="4rem">
 					{[
 						{
 							title: 'Zira Tickets',
+							desciption: "Zira Tickets - To do tasks manager",
 							visit: 'https://exactlyprateek.github.io/zira/',
 							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
 							image: '/zira.png',
 							dark: '/zira.png'
 						},
 						{
+							title: 'Best Resources',
+							desciption: "Best Resources for Devs/Designers/Stuents",
+							visit: 'https://bestresources.vercel.app/',
+							code: null,
+							image: '/bestresources.png',
+							dark: '/bestresources1.png'
+						},
+						{
 							title: 'SkinX',
+							desciption: "SkinX - Skin Disease Detection app",
 							visit: 'http://3.128.170.254/',
 							code: null,
 							image: '/skinx.png',
 							dark: '/skinx.png'
 						},
 						{
-							title: 'Zira Tickets',
+							title: 'Excel Clone',
+							desciption: "Clone of Microsoft Excel",
+							visit: 'https://exactlyprateek.github.io/excel/',
+							code: null,
+							image: '/skinx.png',
+							dark: '/skinx.png'
+						},
+						{
+							title: 'Common Room',
+							desciption: "Common Room for all things MSIT",
 							visit: 'https://commonrooom.vercel.app/',
 							code: 'https://github.com/exactlyprateek/common-room-final',
 							image: '/commonroom.png',
 							dark: '/common2.png'
 						}
-					].map((i, idx) => <Cardboard key={idx} dark={i.dark} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
+					].map((i, idx) => <Cardboard key={idx} dark={i.dark} desciption={i.desciption} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
 				</SimpleGrid>
 			</Box>
 			<Footer />
