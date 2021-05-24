@@ -19,7 +19,7 @@ function Home() {
 					</Heading>
 				</Center>
 
-				<SimpleGrid id="cards" backgroundImage="/blobs.svg" backgroundRepeat="no-repeat"  minChildWidth="400px" mt="4rem">
+				<SimpleGrid id="cards" backgroundImage="/blobs.svg" backgroundRepeat="no-repeat" backgroundSize="cover" minChildWidth="400px" mt="4rem">
 					{[
 						{
 							title: 'Zira Tickets',
