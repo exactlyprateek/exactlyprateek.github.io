@@ -24,7 +24,7 @@ function Home() {
 						{
 							title: 'Zira Tickets',
 							desciption: "Zira Tickets - To do tasks manager",
-							visit: 'https://exactlyprateek.github.io/zira/',
+							visit: '/zira',
 							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
 							image: '/zira.png',
 							dark: '/zira.png'
@@ -48,10 +48,10 @@ function Home() {
 						{
 							title: 'Excel Clone',
 							desciption: "Clone of Microsoft Excel",
-							visit: 'https://exactlyprateek.github.io/excel/',
+							visit: 'excel/',
 							code: null,
-							image: '/skinx.png',
-							dark: '/skinx.png'
+							image: '/excel.png',
+							dark: '/excel.png'
 						},
 						{
 							title: 'Common Room',

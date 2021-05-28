@@ -99,7 +99,7 @@ function Main() {
 						height={'300px'}
 						rounded={'2xl'}
 						boxShadow={'2xl'}
-						_hover={{ boxShadow: 'var(--chakra-shadows-md)' }}
+						_hover={{ boxShadow: 'var(--chakra-shadows-md)',transform: "scale(1.01)" }}
 						transition="all 0.3s ease"
 						width={'full'}
 						overflow={'hidden'}
@@ -123,6 +123,7 @@ function Main() {
 							w={'100%'}
 							h={'100%'}
 							src={'/cover-min.png'}
+							
 						/>
 					</Box>
 				</Flex>
