@@ -27,15 +27,23 @@ function Home() {
 							visit: '/zira',
 							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
 							image: '/zira.png',
-							dark: '/zira.png'
+							tags: "html css vanilla-js github-pages"
+						},
+						{
+							title: 'Spotify Clone',
+							desciption: "Small scale music player",
+							visit: 'https://spotify-clone-rho.vercel.app/',
+							code: "https://github.com/exactlyprateek/spotify-clone/",
+							image: '/spotify-clone.png',
+							tags: "reactjs typescript html css"
 						},
 						{
 							title: 'Best Resources',
 							desciption: "Best Resources for Devs/Designers/Stuents",
 							visit: 'https://bestresources.vercel.app/',
 							code: null,
-							image: '/bestresources.png',
-							dark: '/bestresources1.png'
+							image: '/bestresources1.png',
+							tags: "reactjs django html css"
 						},
 						{
 							title: 'SkinX',
@@ -43,7 +51,7 @@ function Home() {
 							visit: 'http://3.128.170.254/',
 							code: null,
 							image: '/skinx.png',
-							dark: '/skinx.png'
+							tags: "reactjs chakra-ui"
 						},
 						{
 							title: 'Excel Clone',
@@ -51,7 +59,7 @@ function Home() {
 							visit: 'excel/',
 							code: null,
 							image: '/excel.png',
-							dark: '/excel.png'
+							tags: "html css vanilla-js"
 						},
 						{
 							title: 'Common Room',
@@ -59,9 +67,9 @@ function Home() {
 							visit: 'https://commonrooom.vercel.app/',
 							code: 'https://github.com/exactlyprateek/common-room-final',
 							image: '/commonroom.png',
-							dark: '/common2.png'
+							tags: "reactjs nextjs"
 						}
-					].map((i, idx) => <Cardboard key={idx} dark={i.dark} desciption={i.desciption} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
+					].map((i, idx) => <Cardboard tags={i.tags} key={idx} desciption={i.desciption} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
 				</SimpleGrid>
 			</Box>
 			<Footer />

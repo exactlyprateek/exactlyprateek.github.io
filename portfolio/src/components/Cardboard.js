@@ -1,5 +1,18 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { Box, Center, useColorModeValue, Heading, Text, Stack, Image, Button, Link, Tooltip } from '@chakra-ui/react';
+import {
+	Box,
+	Center,
+	useColorModeValue,
+	HStack,
+	Badge,
+	Heading,
+	Text,
+	Stack,
+	Image,
+	Button,
+	Link,
+	Tooltip
+} from '@chakra-ui/react';
 
 function Cardboard(props) {
 	return (
@@ -42,8 +55,8 @@ function Cardboard(props) {
 					zIndex={1}
 				>
 					<Box
-					border={useColorModeValue('1px solid rgba(0,0,0, 0.2)', '1px solid rgba(255,255,255,0.4)')}
-					overflow={'hidden'}
+						border={useColorModeValue('1px solid rgba(0,0,0, 0.2)', '1px solid rgba(255,255,255,0.4)')}
+						overflow={'hidden'}
 						id="blur"
 						rounded={'lg'}
 						mt={-12}
@@ -70,25 +83,26 @@ function Cardboard(props) {
 						}}
 					>
 						<Link target="_blank" href={props.visit}>
-							<Image
-								rounded={'lg'}
-								height={230}
-								width={282}
-								objectFit={'cover'}
-								src={useColorModeValue(props.image, props.dark)}
-							/>
+							<Image rounded={'lg'} height={230} width={282} objectFit={'cover'} src={props.image} />
 						</Link>
 					</Box>
-					<Stack pt={10} align={'center'}>
+					<Stack pt={4} align={'center'}>
+						<Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+							{props.title}
+						</Heading>{' '}
+						<HStack>
+							<Heading fontSize="x-small">STACK:</Heading>
+							{props.tags.split(' ').map((i, idx) => (
+								<Tooltip key={idx} label={i} colorScheme="blackAlpha" placement="top-start">
+									<Badge  border={'1px solid rgba(0,0,0, 0.2)'} colorScheme="black">{i}</Badge>
+								</Tooltip>
+							))}
+						</HStack>
 						<Center>
 							<Text fontSize={'sm'} textTransform={'capitalise'}>
 								{props.desciption}
 							</Text>
 						</Center>
-
-						<Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-							{props.title}
-						</Heading>
 						<Stack direction={'row'} align={'center'}>
 							<Link target="_blank" href={props.visit}>
 								<Button
