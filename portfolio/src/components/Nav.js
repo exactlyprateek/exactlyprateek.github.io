@@ -28,7 +28,10 @@ function NavLink(props) {
 			py={2}
 			rounded={'full'}
 			
-			colorScheme={'red'}>
+			colorScheme={'main'}
+			bg="main.500"
+			_hover={{bg: "main.700"}}
+			>
 					{props.title}
 			</Button>
 		

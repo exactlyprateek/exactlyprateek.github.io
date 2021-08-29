@@ -19,57 +19,84 @@ function Home() {
 					</Heading>
 				</Center>
 
-				<SimpleGrid id="cards" backgroundImage="/blobs.svg" backgroundRepeat="no-repeat" backgroundSize="cover" minChildWidth="400px" mt="4rem">
+				<SimpleGrid
+					id="cards"
+					backgroundImage="/blobs.svg"
+					backgroundRepeat="no-repeat"
+					backgroundSize="cover"
+					minChildWidth="400px"
+					mt="4rem"
+				>
 					{[
 						{
+							title: 'DMIS211',
+							desciption:
+								'DMIS - Resource Stabilization to Prevent Loss of Housing for People at Risk of Homelessness.',
+							visit: 'http://54.190.253.222:5000/',
+							code: 'https://www.dmis211.com/',
+							image: '/dmis.png',
+							tags: 'ReactJS'
+						},
+						{
+							title: 'Teresa Care',
+							desciption:
+								'Teresa Care - We Bring Doctors & Patients Together Using Conversational AI & Connected IOT Devices',
+							visit: 'http://3.15.39.48:5000/',
+							code: 'https://www.teresa.care/',
+							image: '/skinx.png',
+							tags: 'ReactJS Chakra-UI webhooks'
+						},
+						{
 							title: 'Zira Tickets',
-							desciption: "Zira Tickets - To do tasks manager",
+							desciption: 'Zira Tickets - To do tasks manager',
 							visit: '/zira',
 							code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
 							image: '/zira.png',
-							tags: "html css vanilla-js github-pages"
+							tags: 'Vanilla-JS jQuery github-pages'
 						},
 						{
 							title: 'Spotify Clone',
-							desciption: "Small scale music player",
+							desciption: 'Small scale music player',
 							visit: 'https://spotify-clone-rho.vercel.app/',
-							code: "https://github.com/exactlyprateek/spotify-clone/",
+							code: 'https://github.com/exactlyprateek/spotify-clone/',
 							image: '/spotify-clone.png',
-							tags: "reactjs typescript html css"
+							tags: 'reactjs typescript'
 						},
 						{
 							title: 'Best Resources',
-							desciption: "Best Resources for Devs/Designers/Stuents",
+							desciption: 'Best Resources for Devs/Designers/Stuents',
 							visit: 'https://bestresources.vercel.app/',
 							code: null,
 							image: '/bestresources1.png',
-							tags: "reactjs django html css"
-						},
-						{
-							title: 'SkinX',
-							desciption: "SkinX - Skin Disease Detection app",
-							visit: 'http://3.128.170.254/',
-							code: null,
-							image: '/skinx.png',
-							tags: "reactjs chakra-ui"
+							tags: 'ReactJS Django DRF'
 						},
 						{
 							title: 'Excel Clone',
-							desciption: "Clone of Microsoft Excel",
+							desciption: 'Clone of Microsoft Excel',
 							visit: 'excel/',
 							code: null,
 							image: '/excel.png',
-							tags: "html css vanilla-js"
+							tags: 'html css vanilla-js'
 						},
 						{
 							title: 'Common Room',
-							desciption: "Common Room for all things MSIT",
+							desciption: 'Common Room for all things MSIT',
 							visit: 'https://commonrooom.vercel.app/',
 							code: 'https://github.com/exactlyprateek/common-room-final',
 							image: '/commonroom.png',
-							tags: "reactjs nextjs"
+							tags: 'ReactJS NextJS'
 						}
-					].map((i, idx) => <Cardboard tags={i.tags} key={idx} desciption={i.desciption} title={i.title} visit={i.visit} code={i.code} image={i.image} />)}
+					].map((i, idx) => (
+						<Cardboard
+							tags={i.tags}
+							key={idx}
+							desciption={i.desciption}
+							title={i.title}
+							visit={i.visit}
+							code={i.code}
+							image={i.image}
+						/>
+					))}
 				</SimpleGrid>
 			</Box>
 			<Footer />
