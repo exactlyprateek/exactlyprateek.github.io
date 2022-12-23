@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /portfolio/node_modules
+/portfolio-new/node_modules
 /.pnp
 .pnp.js
 

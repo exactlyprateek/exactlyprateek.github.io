@@ -1,10 +1,10 @@
-import { Center, SimpleGrid, Heading, Box } from '@chakra-ui/react';
-import React from 'react';
-import Cardboard from './Cardboard';
-import Main from './Main';
-import Nav from './Nav';
+import { Center, SimpleGrid, Heading, Box } from '@chakra-ui/react'
+import React from 'react'
+import Cardboard from './Cardboard'
+import Main from './Main.jsx'
+import Nav from './Nav'
 // import { Link, animateScroll as scroll } from 'react-scroll';
-import Footer from './Footer';
+import Footer from './Footer'
 function Home() {
 	return (
 		<div>
@@ -12,7 +12,7 @@ function Home() {
 			<Box maxH="50vh">
 				<Main />
 			</Box>
-			<Box mt={[ '52vh', '42vh', '32vh', '22vh' ]}>
+			<Box mt={['52vh', '42vh', '32vh', '22vh']}>
 				<Center>
 					<Heading pt="2rem" id="projects" as="h2" size="2xl">
 						My Projects
@@ -32,19 +32,19 @@ function Home() {
 							title: 'DMIS211',
 							desciption:
 								'DMIS - Resource Stabilization to Prevent Loss of Housing for People at Risk of Homelessness.',
-							visit: 'http://54.190.253.222:5000/',
-							code: 'https://www.dmis211.com/',
+							visit: 'http://demo.dmis211.com/',
+							code: null,
 							image: '/dmis.png',
-							tags: 'ReactJS'
+							tags: 'React Redux GoogleMaps Chakra-UI TypeScript'
 						},
 						{
-							title: 'Teresa Care',
+							title: 'Integration Builder',
 							desciption:
-								'Teresa Care - We Bring Doctors & Patients Together Using Conversational AI & Connected IOT Devices',
-							visit: 'http://3.15.39.48:5000/',
-							code: 'https://www.teresa.care/',
-							image: '/skinx.png',
-							tags: 'ReactJS Chakra-UI webhooks'
+								'AI Studio - AI Studio to automate customer support.',
+							visit: 'https://aistudio-dev.netomi.io/',
+							code: null,
+							image: '/ais.png',
+							tags: 'React Redux Vuejs Material-ui React-Flow TypeScript'
 						},
 						{
 							title: 'Zira Tickets',
@@ -64,7 +64,7 @@ function Home() {
 						},
 						{
 							title: 'Best Resources',
-							desciption: 'Best Resources for Devs/Designers/Stuents',
+							desciption: 'Best Resources for Devs / Designers / Stuents',
 							visit: 'https://bestresources.vercel.app/',
 							code: null,
 							image: '/bestresources1.png',
@@ -84,7 +84,7 @@ function Home() {
 							visit: 'https://commonrooom.vercel.app/',
 							code: 'https://github.com/exactlyprateek/common-room-final',
 							image: '/commonroom.png',
-							tags: 'ReactJS NextJS'
+							tags: 'NextJS Dummy Work_In_Progress'
 						}
 					].map((i, idx) => (
 						<Cardboard
@@ -101,7 +101,7 @@ function Home() {
 			</Box>
 			<Footer />
 		</div>
-	);
+	)
 }
 
-export default Home;
+export default Home

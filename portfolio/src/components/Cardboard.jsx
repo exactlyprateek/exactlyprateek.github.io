@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {
 	Box,
 	Center,
@@ -11,8 +11,9 @@ import {
 	Image,
 	Button,
 	Link,
-	Tooltip
-} from '@chakra-ui/react';
+	Tooltip,
+	Flex
+} from '@chakra-ui/react'
 
 function Cardboard(props) {
 	return (
@@ -90,14 +91,14 @@ function Cardboard(props) {
 						<Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
 							{props.title}
 						</Heading>{' '}
-						<HStack>
-							<Heading fontSize="x-small">STACK:</Heading>
+						<Flex wrap={"wrap"}>
+							<Heading fontSize="x-small" mt="4px" mr="4px">STACK:</Heading>
 							{props.tags.split(' ').map((i, idx) => (
 								<Tooltip key={idx} label={i} colorScheme="blackAlpha" placement="top-start">
-									<Badge  border={'1px solid rgba(0,0,0, 0.2)'} colorScheme="black">{i}</Badge>
+									<Badge mb="4px" mr="4px" border={'1px solid rgba(0,0,0, 0.2)'} colorScheme="black">{i}</Badge>
 								</Tooltip>
 							))}
-						</HStack>
+						</Flex>
 						<Center>
 							<Text fontSize={'sm'} textTransform={'capitalise'}>
 								{props.desciption}
@@ -134,7 +135,7 @@ function Cardboard(props) {
 				</Box>
 			</Box>
 		</Center>
-	);
+	)
 }
 
-export default Cardboard;
+export default Cardboard
