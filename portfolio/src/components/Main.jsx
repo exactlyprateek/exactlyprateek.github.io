@@ -9,12 +9,16 @@ import {
 	Image,
 	Icon,
 	createIcon,
-	useColorModeValue
+	useColorModeValue, Fade
 } from '@chakra-ui/react'
 import { Link } from 'react-scroll'
 import { INTRO_TEXT } from '../constants/main'
+import {useState} from "react";
+import "../styles/main.css"
+
 
 function Main() {
+	const [imageUrl, setImageUrl] = useState('/avatar.png');
 	return (
 		<Container maxW={'7xl'} id="main-container">
 			<Stack
@@ -29,7 +33,7 @@ function Main() {
 							id="names"
 							fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
 							as={'span'}
-							position={'relative'}
+							position='relative'
 							_after={{
 								content: "''",
 								width: 'full',
@@ -44,12 +48,12 @@ function Main() {
 								backgroundPosition: 'center'
 							}}
 						>
-							Prateek Rohilla
+							{"Prateek Rohilla"}
 						</Heading>
 						<br />
 
 						<Heading fontSize={{ base: 'xl', sm: '2xl', lg: '4xl' }} as={'span'} color={'red.400'}>
-							Software Developer
+							{"Software  "}&nbsp;    {"Developer"}
 						</Heading>
 					</Heading>
 					<Text color={'gray.500'}>
@@ -71,7 +75,6 @@ function Main() {
 							</Button>
 						</a>
 						<Link smooth={true} to={'projects'}>
-							{' '}
 							<Button
 								rounded='full'
 								size='lg'
@@ -84,36 +87,41 @@ function Main() {
 						</Link>
 					</Stack>
 				</Stack>
-				<Flex flex={1} justify={'center'} align={'center'} position={'relative'} w={'full'}>
+				<Flex transition="all 300ms" _hover={{ filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))', transform: 'scale(0.99)' }} filter="drop-shadow(0 25px 50px rgba(0, 0, 0, 0.25))" flex={1} justify={'center'} align={'center'} position={'relative'} w={'full'}>
 					<Blob
 						w='150%'
 						h='150%'
 						position='absolute'
 						top='-20%'
 						left={0}
+
 						zIndex={-1}
 						color={useColorModeValue('#FF6431', '#FF6431')}
 					/>
-					<Box
+					<Fade in={!!imageUrl}>	<Box
 						position={'relative'}
 						height={'300px'}
 						rounded={'2xl'}
 						boxShadow={'2xl'}
-						_hover={{ boxShadow: 'var(--chakra-shadows-md)', transform: 'scale(0.99)' }}
+						// _hover={{ boxShadow: 'var(--chakra-shadows-md)', transform: 'scale(0.99)' }}
 						transition="all 0.3s ease"
-						width={'full'}
+						width={'300px'}
 						overflow={'hidden'}
 					>
 
 						<Image
+							className="fade-in-image"
+							animation=""
+							onMouseEnter={() => setImageUrl('/cover-min.png')}
+							onMouseLeave={() => setImageUrl('/avatar.png')}
 							alt='Hero Image'
 							fit='cover'
 							align='center'
 							w='100%'
 							h='100%'
-							src='/cover-min.png'
+							src={imageUrl}
 						/>
-					</Box>
+					</Box></Fade>
 				</Flex>
 			</Stack>
 		</Container>
