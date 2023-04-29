@@ -47,15 +47,15 @@ const PROJECT_DATA = [
     code: null,
     image: '/excel.png',
     tags: 'html css vanilla-js'
-  },
-  {
-    title: 'Common Room',
-    desciption: 'Common Room for all things MSIT',
-    visit: 'https://commonrooom.vercel.app/',
-    code: 'https://github.com/exactlyprateek/common-room-final',
-    image: '/commonroom.png',
-    tags: 'NextJS Dummy Work_In_Progress'
   }
+  // {
+  //   title: 'Common Room',
+  //   desciption: 'Common Room for all things MSIT',
+  //   visit: 'https://commonrooom.vercel.app/',
+  //   code: 'https://github.com/exactlyprateek/common-room-final',
+  //   image: '/commonroom.png',
+  //   tags: 'NextJS Dummy Work_In_Progress'
+  // }
 ];
 export default PROJECT_DATA;
 export const INTRO_TEXT =
