@@ -1,24 +1,25 @@
 const PROJECT_DATA = [
   {
     title: 'DMIS211',
-    desciption:
+    description:
       'DMIS - Resource Stabilization to Prevent Loss of Housing for People at Risk of Homelessness.',
     visit: 'http://demo.dmis211.com/',
     code: null,
+    demo: "https://1q2pfj-my.sharepoint.com/:v:/g/personal/prateek_1q2pfj_onmicrosoft_com/EUtyRnFVI09JrcE8S2WYKtEBOXlVOtzQ_w5ZwIIQs5V2rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zeRVIY",
     image: '/dmis.png',
     tags: 'React Redux GoogleMaps Chakra-UI TypeScript'
   },
   {
     title: 'Integration Builder',
-    desciption: 'AI Studio - AI Studio to automate customer support.',
-    visit: 'https://aistudio-dev.netomi.io/',
+    description: 'AI Studio - AI Studio to automate customer support.',
+    visit: null,
     code: null,
     image: '/ais.png',
     tags: 'React Redux Vuejs Material-ui React-Flow TypeScript'
   },
   {
     title: 'Zira Tickets',
-    desciption: 'Zira Tickets - To do tasks manager',
+    description: 'Zira Tickets - To do tasks manager',
     visit: '/zira',
     code: 'https://github.com/exactlyprateek/exactlyprateek.github.io',
     image: '/zira.png',
@@ -26,7 +27,7 @@ const PROJECT_DATA = [
   },
   {
     title: 'Spotify Clone',
-    desciption: 'Small scale music player',
+    description: 'Small scale music player',
     visit: 'https://spotify-clone-rho.vercel.app/',
     code: 'https://github.com/exactlyprateek/spotify-clone/',
     image: '/spotify-clone.png',
@@ -34,7 +35,7 @@ const PROJECT_DATA = [
   },
   {
     title: 'Best Resources',
-    desciption: 'Best Resources for Devs / Designers / Stuents',
+    description: 'Best Resources for Devs / Designers / Stuents',
     visit: 'https://bestresources.vercel.app/',
     code: null,
     image: '/bestresources1.png',
@@ -42,7 +43,7 @@ const PROJECT_DATA = [
   },
   {
     title: 'Excel Clone',
-    desciption: 'Clone of Microsoft Excel',
+    description: 'Clone of Microsoft Excel',
     visit: 'excel/',
     code: null,
     image: '/excel.png',
@@ -50,7 +51,7 @@ const PROJECT_DATA = [
   }
   // {
   //   title: 'Common Room',
-  //   desciption: 'Common Room for all things MSIT',
+  //   description: 'Common Room for all things MSIT',
   //   visit: 'https://commonrooom.vercel.app/',
   //   code: 'https://github.com/exactlyprateek/common-room-final',
   //   image: '/commonroom.png',

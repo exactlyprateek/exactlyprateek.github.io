@@ -101,7 +101,7 @@ function Cardboard(props) {
 						</Flex>
 						<Center>
 							<Text fontSize={'sm'} textTransform={'capitalise'}>
-								{props.desciption}
+								{props.description}
 							</Text>
 						</Center>
 						<Stack direction={'row'} align={'center'}>
@@ -115,18 +115,18 @@ function Cardboard(props) {
 									Visit
 								</Button>
 							</Link>
-							<Link target="_blank" href={props.code}>
+							<Link target="_blank" href={props.code || props.demo}>
 								<Tooltip
-									label={props.code ? 'Click to check code' : 'Code is private!'}
+									label={props.code ? 'Click to check code' : ''}
 									aria-label="A tooltip"
 								>
 									<Button
-										disabled={!props.code}
+										disabled={!props.code && !props.demo}
 										rightIcon={<ExternalLinkIcon />}
 										textDecoration={'underline'}
 										colorScheme={'red'}
 									>
-										Code
+										{props.demo ? "Demo" : "Code"}
 									</Button>
 								</Tooltip>
 							</Link>

@@ -32,10 +32,11 @@ function Home() {
 						<Cardboard
 							tags={i.tags}
 							key={idx}
-							desciption={i.desciption}
+							description={i.description}
 							title={i.title}
 							visit={i.visit}
 							code={i.code}
+							demo={i.demo}
 							image={i.image}
 						/>
 					))}
