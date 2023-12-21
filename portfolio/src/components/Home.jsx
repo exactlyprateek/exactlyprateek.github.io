@@ -1,4 +1,4 @@
-import { Center, SimpleGrid, Heading, Box } from '@chakra-ui/react'
+import { Center, SimpleGrid, Heading, Box, Grid, GridItem } from '@chakra-ui/react'
 import React from 'react'
 import Cardboard from './Cardboard'
 import Main from './Main.jsx'
@@ -6,6 +6,7 @@ import Nav from './Nav'
 // import { Link, animateScroll as scroll } from 'react-scroll';
 import Footer from './Footer'
 import PROJECT_DATA from '../constants/main'
+import "./../App.css"
 function Home() {
 	return (
 		<div>
@@ -44,6 +45,30 @@ function Home() {
 			</Box>
 			<Footer />
 		</div>
+
+		// <Grid
+		// 	// bg="black"
+		// 	// className=""
+		// 	// bgImage={"/public/circle-scatter.svg"}
+		// 	// backgroundRepeat={0}
+		// 	// backgroundSize={"cover"}
+
+		// 	// h='2000px'
+		// 	// templateRows='repeat(2, 1fr)'
+		// 	// templateColumns='repeat(5, 1fr)'
+		// 	// gap={4}
+		// 	// overflow="scroll"
+
+		// 	className='main-grid magicpattern'
+		// >
+		// 	<GridItem className="grid-element grid-element-1x2">hello</GridItem>
+		// 	<GridItem className='grid-element' rowSpan={2} colSpan={1} />
+		// 	<GridItem className='grid-element' rowSpan={2} colSpan={1} />
+		// 	<GridItem className='grid-element' rowSpan={1} colSpan={3} />
+		// 	<GridItem className='grid-element' rowSpan={1} colSpan={2} />
+
+		// </Grid>
+
 	)
 }
 

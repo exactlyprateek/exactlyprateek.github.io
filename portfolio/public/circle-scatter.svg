@@ -1,0 +1,22 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <rect x="0" y="0" width="900" height="600" fill="##ffffff00"></rect>
+    <g fill="rgba(255, 69, 7, 01993)">
+        <circle r="95" cx="191" cy="437"></circle>
+        <circle r="18" cx="749" cy="398"></circle>
+        <circle r="83" cx="892" cy="112"></circle>
+        <circle r="42" cx="221" cy="55"></circle>
+        <circle r="49" cx="455" cy="283"></circle>
+        <circle r="71" cx="812" cy="589"></circle>
+        <circle r="19" cx="645" cy="1"></circle>
+        <circle r="25" cx="538" cy="541"></circle>
+        <circle r="49" cx="435" cy="78"></circle>
+        <circle r="48" cx="45" cy="226"></circle>
+        <circle r="86" cx="34" cy="555"></circle>
+        <circle r="62" cx="648" cy="233"></circle>
+        <circle r="39" cx="254" cy="242"></circle>
+        <circle r="34" cx="343" cy="566"></circle>
+        <circle r="78" cx="30" cy="9"></circle>
+    </g>
+</svg>

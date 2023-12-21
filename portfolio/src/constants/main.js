@@ -5,7 +5,7 @@ const PROJECT_DATA = [
       'DMIS - Resource Stabilization to Prevent Loss of Housing for People at Risk of Homelessness.',
     visit: 'http://demo.dmis211.com/',
     code: null,
-    demo: "https://1q2pfj-my.sharepoint.com/:v:/g/personal/prateek_1q2pfj_onmicrosoft_com/EUtyRnFVI09JrcE8S2WYKtEBOXlVOtzQ_w5ZwIIQs5V2rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zeRVIY",
+    demo: 'https://1q2pfj-my.sharepoint.com/:v:/g/personal/prateek_1q2pfj_onmicrosoft_com/EUtyRnFVI09JrcE8S2WYKtEBOXlVOtzQ_w5ZwIIQs5V2rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zeRVIY',
     image: '/dmis.png',
     tags: 'React Redux GoogleMaps Chakra-UI TypeScript'
   },
@@ -44,21 +44,14 @@ const PROJECT_DATA = [
   {
     title: 'Excel Clone',
     description: 'Clone of Microsoft Excel',
-    visit: 'excel/',
+    visit: 'https://exactlyprateek-github-io.vercel.app/',
     code: null,
     image: '/excel.png',
     tags: 'html css vanilla-js'
   }
-  // {
-  //   title: 'Common Room',
-  //   description: 'Common Room for all things MSIT',
-  //   visit: 'https://commonrooom.vercel.app/',
-  //   code: 'https://github.com/exactlyprateek/common-room-final',
-  //   image: '/commonroom.png',
-  //   tags: 'NextJS Dummy Work_In_Progress'
-  // }
+
 ];
 export default PROJECT_DATA;
 export const INTRO_TEXT =
     "Welcome to my personal website! Here you'll find my portfolio, blogs, and information about my journey as a highly skilled software developer currently mastering Distributed Systems Engineering. \
-  I specialize in TypeScript, ReactJS, VueJS and more. I'm always eager to learn and grow, so come along for the ride as I explore the world of programming and technology.";
+  I specialize in TypeScript, ReactJS, VueJS and more.";

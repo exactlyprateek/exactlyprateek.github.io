@@ -1,13 +1,13 @@
-import {ChakraProvider} from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import * as ReactDOM from 'react-dom/client'
-import {ColorModeScript} from '@chakra-ui/react'
+import { ColorModeScript } from '@chakra-ui/react'
 // 1. import `ChakraProvider` component
 // import { ChakraProvider } from '@chakra-ui/react'
-import {extendTheme} from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react'
 import React from 'react'
 import App from './App'
-import {DevSupport} from "@react-buddy/ide-toolbox";
-import {ComponentPreviews, useInitial} from "./dev";
+import { DevSupport } from "@react-buddy/ide-toolbox"
+import { ComponentPreviews, useInitial } from "./dev"
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
     brand: {
@@ -31,17 +31,23 @@ const config = {
     initialColorMode: 'dark',
     useSystemColorMode: false
 }
-const theme = extendTheme({colors, config})
+const theme = extendTheme({ colors, config })
 
 const rootElement = document.getElementById('root')
 ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-        <ChakraProvider theme={theme}>
-            <ColorModeScript initialColorMode={theme.config.initialColorMode}/>
+        <ChakraProvider
+            theme={theme}
+        >
+            <ColorModeScript
+                initialColorMode={theme.config.initialColorMode}
+            />
             <DevSupport ComponentPreviews={ComponentPreviews}
-                        useInitialHook={useInitial}
+                useInitialHook={useInitial}
             >
-                <App/>
+
+                <App />
+
             </DevSupport>
         </ChakraProvider>
     </React.StrictMode>,
