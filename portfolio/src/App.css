@@ -42,19 +42,30 @@
   /* margin: 32px auto; */
   display: grid;
 }
+.grid-element-light {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.grid-element-dark {
+  background-color: rgba(94, 94, 94, 0.2);
+}
 .grid-element {
   backdrop-filter: blur(12px);
-  background-color: rgba(94, 94, 94, 0.2);
+  min-width: 200px;
+  min-height: 300px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 48px;
-  /* background-color:  */
-  padding-left: 32px;
-  padding-right: 32px;
+  /* padding-top: 48px; */
+  /* background-color: #edeaffee; */
+  /* padding-left: 32px; */
+  /* padding-right: 32px; */
+  overflow: hidden;
   display: flex;
   position: relative;
+}
+.grid-element:hover {
+  outline: 4px rgb(255, 255, 255);
 }
 .grid-element-1x2 {
   grid-area: span 2 / span 1 / span 2 / span 1;

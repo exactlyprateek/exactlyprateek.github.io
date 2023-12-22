@@ -1,7 +1,7 @@
 <svg id="visual" viewBox="0 0 900 600" width="900" height="600"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-    <rect x="0" y="0" width="900" height="600" fill="#1c1c1c"></rect>
+    <rect x="0" y="0" width="900" height="600" fill="#edeaffee"></rect>
     <g fill="rgba(255, 69, 7, 0.8)">
         <circle r="45" cx="191" cy="437"></circle>
         <circle r="18" cx="749" cy="398"></circle>

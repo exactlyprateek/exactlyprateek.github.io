@@ -13,12 +13,12 @@ import {
 } from '@chakra-ui/react'
 import { Link } from 'react-scroll'
 import { INTRO_TEXT } from '../constants/main'
-import {useState} from "react";
+import { useState } from "react"
 import "../styles/main.css"
 
 
 function Main() {
-	const [imageUrl, setImageUrl] = useState('/avatar.png');
+	const [imageUrl, setImageUrl] = useState('/avatar.png')
 	return (
 		<Container maxW={'7xl'} id="main-container">
 			<Stack
@@ -60,7 +60,7 @@ function Main() {
 						{INTRO_TEXT}
 					</Text>
 					<Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
-						<a href="/CV_Prateek_Rohilla.pdf" target="_blank">
+						<a href={window.location.hostname.replace("www.", "resume.")} target="_blank">
 							{' '}
 							<Button
 								rounded='full'
