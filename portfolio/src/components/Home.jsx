@@ -82,7 +82,7 @@ function Home() {
 				</GridItem>
 				<GridItem {...oneXone}>
 					<Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
-						<a href={"https://" + window.location.hostname.replace("www.", "resume.")} target="_blank">
+						<a href={"https://github.com/exactlyprateek/exactlyprateek/blob/master/PrateekRohillaResume.pdf"} target="_blank">
 							{' '}
 							<Button
 								rounded='full'
